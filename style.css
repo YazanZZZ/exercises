@@ -1,0 +1,41 @@
+
+.container{
+ display: grid;
+ border: 1px solid grey;
+ padding: 1.5rem;
+ gap: 10px;
+ grid-template-areas: 
+ "red red blue blue"
+ "green purple purple purple"
+ "yellow yellow yellow yellow";
+}
+
+.container div {
+    height: 50px;
+    border-radius: 20px;
+}
+
+.red {
+    grid-area: red;
+    background-color: red;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: blue;
+}
+
+.green {
+    grid-area: green;
+    background-color: green;
+}
+
+.purple {
+    grid-area: purple;
+    background-color: purple;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+}
