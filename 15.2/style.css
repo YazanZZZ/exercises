@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    border: 1px solid grey;
+    padding: 1.5rem;
+    gap: 20px;
+    grid-template-areas: 
+    'red red red red'
+    'blue blue green green'
+    'blue blue purple purple2';
+
+}
+.container div {
+    /* I realized the height command below made the blue restricted to stretch to
+    the size I wanted so I made the height specific for each block. */
+    /* height: 100px; */
+    border-radius: 20px;
+}
+
+.red {
+    grid-area: red;
+    background-color: red;
+    height: 75px;
+}
+.blue {
+    grid-area: blue;
+    background-color: blue;
+}
+.green {
+    grid-area: green;
+    background-color: green;
+    height: 75px;
+}
+.purple {
+    grid-area: purple;
+    background-color: purple;
+    height: 75px;
+}
+.purple2 {
+    grid-template-areas: purple;
+    background-color: purple;
+    height: 75px;
+}
